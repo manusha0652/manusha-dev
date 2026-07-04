@@ -1,0 +1,13 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#08090d"/>
+  <rect x="56" y="56" width="1088" height="518" rx="28" fill="#0E1118" stroke="#1E293B"/>
+  <circle cx="116" cy="116" r="8" fill="#EF4444"/>
+  <circle cx="144" cy="116" r="8" fill="#F59E0B"/>
+  <circle cx="172" cy="116" r="8" fill="#22C55E"/>
+  <text x="112" y="214" fill="#93C5FD" font-family="Space Grotesk, Arial, sans-serif" font-size="22" letter-spacing="4">MANUSHA RANAWEERA</text>
+  <text x="112" y="298" fill="#FFFFFF" font-family="Space Grotesk, Arial, sans-serif" font-size="68" font-weight="700">Full-Stack Software Engineer</text>
+  <text x="112" y="362" fill="#CBD5E1" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="28">React • TypeScript • ASP.NET Core • Spring Boot • Gemini API</text>
+  <text x="112" y="452" fill="#94A3B8" font-family="Fira Code, monospace" font-size="22">Production systems, enterprise delivery, and AI-assisted workflows.</text>
+  <rect x="112" y="492" width="240" height="56" rx="16" fill="#2563EB"/>
+  <text x="160" y="528" fill="#FFFFFF" font-family="Fira Code, monospace" font-size="20" font-weight="700">View Projects</text>
+</svg>
