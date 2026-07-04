@@ -38,10 +38,3 @@ export interface Certification {
   year: string;
   link?: string;
 }
-
-export interface ChatMessage {
-  id: string;
-  role: "user" | "assistant";
-  content: string;
-  timestamp: string;
-}

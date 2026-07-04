@@ -6,7 +6,6 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import LearningCards from "../components/LearningCards";
 import About from "../components/About";
-import AIChat from "../components/AIChat";
 
 export default function HomePage() {
   const location = useLocation();
@@ -33,7 +32,6 @@ export default function HomePage() {
       <Skills />
       <LearningCards />
       <About />
-      <AIChat />
     </>
   );
 }

@@ -8,12 +8,11 @@ export const experience: ExperienceItem[] = [
     period: "Nov 2025 – Apr 2026",
     highlights: [
       "Engineered and maintained enterprise web applications with React, TypeScript, and ASP.NET Core, improving UI responsiveness and overall system stability across multiple modules.",
-      "Built and deployed an AI-powered internal chat assistant by integrating the Gemini LLM API with backend data sources, enabling context-aware question answering for live enterprise use.",
       "Authored technical documentation for the AI assistant, including system architecture, API usage, and onboarding notes for other developers.",
       "Designed scalable RESTful APIs and backend services in ASP.NET Core, supporting smooth frontend-backend communication across production systems.",
       "Worked in an Agile environment with Git and Jira, diagnosing bugs and shipping fixes that improved reliability and code quality."
     ],
-    skillsUsed: ["React", "TypeScript", "ASP.NET Core", "Gemini API", "REST APIs", "Agile", "Jira"]
+    skillsUsed: ["React", "TypeScript", "ASP.NET Core", "REST APIs", "Agile", "Jira"]
   }
 ];
 

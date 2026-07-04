@@ -23,27 +23,6 @@ export const projects: Project[] = [
     designNotes: "Positioned as a practical system for a real transportation workflow: fast booking flows, clear operator screens, and service boundaries that keep distributed state manageable."
   },
   {
-    id: "zebra-ai-chat-assistant",
-    title: "Zebra AI Chat Assistant",
-    subtitle: "Internal Enterprise LLM Tool",
-    description: "An internal AI assistant for Zebra Technologies that answers team questions by connecting a Gemini-powered chat experience to company data sources.",
-    problem: "Teams needed a faster way to retrieve internal information without manually searching across backend systems and documentation.",
-    solution: "Built and deployed a context-aware assistant integrated with Gemini LLM API and backend databases, keeping the experience aligned with the existing React, TypeScript, and ASP.NET Core stack.",
-    oneHardThing: "Balanced response quality with enterprise constraints by wiring the assistant to structured backend data, keeping the tool useful without exposing unnecessary system complexity to end users.",
-    techStack: ["React", "TypeScript", "ASP.NET Core", "Gemini API", "REST APIs", "SQL", "Enterprise UI"],
-    tags: ["Enterprise AI", "Gemini API", "Production Usage"],
-    imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
-    metrics: [
-      "Built for live enterprise use",
-      "Connected to backend databases",
-      "Improved internal information retrieval"
-    ],
-    links: {
-      github: "https://github.com/manusha0652",
-    },
-    designNotes: "Treats AI as a practical workflow tool rather than a demo, with a grounded backend and a simple interface that keeps the interaction predictable for internal users."
-  },
-  {
     id: "servesmart",
     title: "ServeSmart",
     subtitle: "Restaurant POS System",
