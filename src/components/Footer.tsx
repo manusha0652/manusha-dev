@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Phone, Download, MapPin } from "lucide-react";
+import cvfile from "../../assets/cv.pdf"
 
 export default function Footer() {
   const gmailComposeUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=kawshanmanusha7@gmail.com";
@@ -75,7 +76,7 @@ export default function Footer() {
           </p>
           
           <a
-            href="/cv/cv.pdf"
+            href={cvfile}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs text-white font-mono transition-all"
