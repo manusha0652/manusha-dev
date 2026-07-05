@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/manusha-dev/',
+    base: process.env.GITHUB_PAGES === 'true' ? '/manusha-dev/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
