@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Github, Linkedin } from "lucide-react";
+import { Menu, X, Github, Linkedin,Download } from "lucide-react";
+import cvFile from "../../assets/cv.pdf";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -56,10 +57,15 @@ export default function Header() {
           <Link to="/#about" className="text-slate-400 hover:text-white transition-colors">
             ABOUT
           </Link>
-          <Link to="/#assistant" className="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5">
-            ASSISTANT
-            <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-          </Link>
+         <a
+  href={cvFile}
+  download="Manusha_Ranaweera_CV.pdf"
+  className="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5"
+>
+  RESUME
+  <Download className="h-4 w-4" />
+  <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+</a>
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
@@ -139,14 +145,15 @@ export default function Header() {
             >
               ABOUT
             </Link>
-            <Link
-              to="/#assistant"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-slate-300 hover:text-white py-2 flex items-center gap-2"
-            >
-              AI Assistant
-              <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            </Link>
+              <a
+  href={cvFile}
+  download="Manusha_Ranaweera_CV.pdf"
+  className="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5"
+>
+  RESUME
+  <Download className="h-4 w-4" />
+  <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+</a>
           </div>
 
           <div className="flex gap-4 pt-4 border-t border-slate-900">

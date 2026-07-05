@@ -65,13 +65,13 @@ export default function Hero() {
               Contact
               <Mail className="h-4 w-4" />
             </a>
-            <a
+            {/* <a
               href="#assistant"
               className="px-6 py-3 rounded-lg border border-slate-800 hover:border-slate-700 bg-slate-950/40 hover:bg-slate-900/60 text-slate-300 hover:text-white transition-all duration-200 font-medium flex items-center gap-2"
             >
               Ask my portfolio
               <span className="flex h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
-            </a>
+            </a> */}
           </motion.div>
 
           <motion.div
