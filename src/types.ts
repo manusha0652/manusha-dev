@@ -8,7 +8,9 @@ export interface Project {
   oneHardThing: string;
   techStack: string[];
   tags: string[];
-  imageUrl: string;
+  previewIconKey: "bus" | "food" | "gift" | "health";
+  previewAccent: "blue" | "amber" | "violet" | "emerald";
+  previewDomain: string; // Fake address-bar text shown in the project preview mockup
   metrics?: string[];
   links: {
     github?: string;

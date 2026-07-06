@@ -11,7 +11,9 @@ export const projects: Project[] = [
     oneHardThing: "Implemented inter-service communication across four microservices with isolated databases, keeping the ticketing workflow consistent while the platform scaled on AWS EC2.",
     techStack: ["Spring Boot", "React Native", "TypeScript", "Next.js", "Supabase (PostgreSQL)", "AWS EC2", "Tailwind CSS", "Docker"],
     tags: ["Microservices", "React Native", "AWS EC2"],
-    imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    previewIconKey: "bus",
+    previewAccent: "blue",
+    previewDomain: "busmate.lk/dispatch",
     metrics: [
       "Four microservices with isolated databases",
       "Real-time booking and trip coordination",
@@ -32,7 +34,9 @@ export const projects: Project[] = [
     oneHardThing: "Designed the application so order state stayed consistent across the UI and backend while keeping the experience fast enough for daily front-of-house use.",
     techStack: ["React", "Redux", "Node.js", "Express.js", "MongoDB", "REST APIs"],
     tags: ["POS", "Redux", "MERN Stack"],
-    imageUrl: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+    previewIconKey: "food",
+    previewAccent: "amber",
+    previewDomain: "servesmart.app/orders",
     metrics: [
       "Real-time table and order tracking",
       "Redux-driven interface state",
@@ -53,7 +57,9 @@ export const projects: Project[] = [
     oneHardThing: "Separated customer and admin flows cleanly so inventory and order management could stay secure while the shopping flow stayed simple.",
     techStack: ["Laravel", "PHP", "MySQL", "Tailwind CSS", "JavaScript", "AJAX"],
     tags: ["E-Commerce", "JWT", "Admin CRUD"],
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+    previewIconKey: "gift",
+    previewAccent: "violet",
+    previewDomain: "soulgift.store/checkout",
     metrics: [
       "JWT-authenticated user sessions",
       "Admin dashboard with full CRUD",
@@ -74,7 +80,9 @@ export const projects: Project[] = [
     oneHardThing: "Integrated booking, payments, and notification workflows so the user journey stayed connected across the full application flow.",
     techStack: ["JavaScript", "PHP", "MVC", "MySQL", "HTML", "CSS", "Git"],
     tags: ["Health Tech", "MVC", "Payments"],
-    imageUrl: "https://images.unsplash.com/photo-1580281657527-47f249e8f1f4?auto=format&fit=crop&w=1200&q=80",
+    previewIconKey: "health",
+    previewAccent: "emerald",
+    previewDomain: "e-care.health/portal",
     metrics: [
       "Appointment booking workflow",
       "SMTP notifications and payments",

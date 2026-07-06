@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Project } from "../types";
 import { projects } from "../data";
 import { ArrowUpRight, Github, ChevronRight, Layers } from "lucide-react";
+import ProjectPreview from "./ProjectPreview";
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -36,19 +37,10 @@ export default function Projects() {
               className="group cursor-pointer bg-slate-950 border border-slate-900/80 hover:border-blue-500/30 rounded-2xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 relative overflow-hidden"
             >
               <div className="relative h-56 w-full rounded-xl overflow-hidden mb-6 bg-slate-900 border border-slate-800/40">
-                <img
-                  src={project.imageUrl}
-                  alt={project.title}
-                  className="w-full h-full object-cover opacity-70 group-hover:opacity-85 group-hover:scale-[1.03] transition-all duration-500"
+                <ProjectPreview
+                  project={project}
+                  className="transition-transform duration-500 group-hover:scale-[1.02]"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
-                  {project.tags.map(tag => (
-                    <span key={tag} className="px-2.5 py-0.5 rounded bg-slate-950/90 border border-slate-800 text-[10px] text-slate-300 font-mono">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
               </div>
 
               <div>
@@ -64,6 +56,14 @@ export default function Projects() {
                   <div className="p-2 rounded-full bg-slate-900 border border-slate-800 text-slate-400 group-hover:text-white group-hover:bg-blue-600 group-hover:border-blue-500 transition-all duration-200">
                     <ArrowUpRight className="h-4 w-4" />
                   </div>
+                </div>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map(tag => (
+                    <span key={tag} className="px-2.5 py-0.5 rounded bg-slate-900/80 border border-slate-800 text-[10px] text-slate-400 font-mono">
+                      {tag}
+                    </span>
+                  ))}
                 </div>
 
                 <p className="text-slate-400 text-sm font-light leading-relaxed mb-6">
@@ -120,11 +120,7 @@ export default function Projects() {
                 
                 {/* Hero Header & Preview Panel */}
                 <div className="lg:col-span-5 relative h-64 lg:h-auto min-h-64 bg-slate-900">
-                  <img
-                    src={selectedProject.imageUrl}
-                    alt={selectedProject.title}
-                    className="absolute inset-0 w-full h-full object-cover opacity-50"
-                  />
+                  <ProjectPreview project={selectedProject} className="absolute inset-0" />
                   <div className="absolute inset-0 bg-linear-to-t from-brand-card via-brand-card/40 to-transparent lg:bg-linear-to-r lg:from-transparent lg:to-brand-card"></div>
                   
                   <div className="absolute bottom-6 left-6 right-6">

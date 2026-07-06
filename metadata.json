@@ -1,6 +1,5 @@
 {
   "name": "Manusha Ranaweera Portfolio",
-  "description": "Premium design-engineered portfolio of Manusha Ranaweera, showcasing elite UI/UX design married to full-stack engineering, complete with an interactive AI chat assistant.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "description": "Premium design-engineered portfolio of Manusha Ranaweera, showcasing elite UI/UX design married to full-stack engineering.",
+  "requestFramePermissions": []
 }

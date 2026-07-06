@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Github, Linkedin,Download } from "lucide-react";
 import cvFile from "../../assets/cv.pdf";
+
+const NAV_SECTIONS = ["projects", "skills", "learning", "experience", "about"];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const location = useLocation();
   const gmailComposeUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=kawshanmanusha7@gmail.com";
 
   useEffect(() => {
@@ -15,6 +19,35 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (location.pathname !== "/") {
+      setActiveSection(null);
+      return;
+    }
+
+    const sections = NAV_SECTIONS.map((id) => document.getElementById(id)).filter(
+      (el): el is HTMLElement => el !== null
+    );
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, [location.pathname]);
+
+  const navLinkClass = (id: string) =>
+    `transition-colors ${activeSection === id ? "text-white" : "text-slate-400 hover:text-white"}`;
 
   return (
     <header
@@ -42,19 +75,19 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-xs font-mono">
-          <Link to="/#projects" className="text-slate-400 hover:text-white transition-colors">
+          <Link to="/#projects" className={navLinkClass("projects")}>
             WORK
           </Link>
-          <Link to="/#skills" className="text-slate-400 hover:text-white transition-colors">
+          <Link to="/#skills" className={navLinkClass("skills")}>
             SKILLS
           </Link>
-          <Link to="/#learning" className="text-slate-400 hover:text-white transition-colors">
+          <Link to="/#learning" className={navLinkClass("learning")}>
             LEARNING
           </Link>
-          <Link to="/#experience" className="text-slate-400 hover:text-white transition-colors">
+          <Link to="/#experience" className={navLinkClass("experience")}>
             EXPERIENCE
           </Link>
-          <Link to="/#about" className="text-slate-400 hover:text-white transition-colors">
+          <Link to="/#about" className={navLinkClass("about")}>
             ABOUT
           </Link>
          <a
