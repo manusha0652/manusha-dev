@@ -72,7 +72,7 @@ export default function Footer() {
         <div className="md:col-span-3 space-y-4">
           <h4 className="text-xs font-mono uppercase tracking-widest text-slate-400">ARTIFACTS</h4>
           <p className="text-xs font-light text-slate-500 leading-relaxed">
-            Need a printer-friendly version? Request the resume or download the PDF if you already have a copy from LinkedIn.
+            Grab a copy of my latest CV directly below — always kept up to date.
           </p>
           
           <a
