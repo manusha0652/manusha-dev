@@ -1,6 +1,6 @@
 import { experience, certifications } from "../data";
 import { motion } from "motion/react";
-import { Briefcase, Calendar, GraduationCap, Award, MapPin, CheckCircle2 } from "lucide-react";
+import { Briefcase, Calendar, GraduationCap, Award, MapPin, CheckCircle2, Sparkles, Users } from "lucide-react";
 
 export default function Experience() {
   return (
@@ -76,6 +76,38 @@ export default function Experience() {
                 </motion.div>
               ))}
             </div>
+
+            <div className="rounded-2xl border border-blue-500/20 bg-blue-500/5 p-6 space-y-3">
+              <div className="flex items-center gap-2 text-blue-300">
+                <Sparkles className="h-4 w-4" />
+                <h4 className="text-xs uppercase tracking-widest font-mono">Right Now</h4>
+              </div>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Recently graduated with a B.Sc. in Computer Science from UCSC, shipping AI-integrated side projects like Ferris the Librarian, and going deeper into cloud and DevOps. Actively looking for full-time Full-Stack Software Engineer roles.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-900 bg-slate-950 p-6 space-y-4">
+              <h4 className="text-xs uppercase tracking-widest font-mono text-slate-500 flex items-center gap-2">
+                <Users className="h-4 w-4 text-blue-500" />
+                References
+              </h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <p className="text-sm font-medium text-white">Dinusha Thilakarathna</p>
+                  <p className="text-xs text-slate-500">Technical Lead, Zebra Technologies</p>
+                  <p className="text-xs text-slate-500 mt-1">My mentor during the internship</p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-white">Viraj Amarasekera</p>
+                  <p className="text-xs text-slate-500">Senior Manager – Software Engineering, Zebra Technologies</p>
+                  <p className="text-xs text-slate-500 mt-1">My manager during the internship</p>
+                </div>
+              </div>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                Contact details available on request.
+              </p>
+            </div>
           </div>
 
           {/* Right Column: Education & Certifications */}
@@ -104,8 +136,31 @@ export default function Experience() {
                   <p className="text-xs text-slate-500 flex items-center gap-1">
                     <MapPin className="h-3 w-3" /> Colombo, Sri Lanka
                   </p>
-                  <p className="text-xs text-slate-400 font-light pt-2 leading-relaxed">
-                    Coursework and project work focused on algorithms, software architecture, microservices, databases, and Agile delivery.
+                  <p className="text-xs text-blue-400 font-medium pt-1">Second Lower Division</p>
+                  <div className="pt-3">
+                    <p className="text-[10px] uppercase tracking-widest text-slate-500 font-mono mb-2">Relevant Coursework</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {[
+                        "Data Structures & Algorithms",
+                        "Software Engineering",
+                        "Databases",
+                        "Computer Networks",
+                        "Middleware Architecture",
+                        "Software Quality Assurance",
+                        "Software Project Management",
+                        "Mobile App Development",
+                        "Rapid Application Development",
+                        "Machine  Learning",
+                        "Group Projects"
+                      ].map((course) => (
+                        <span key={course} className="px-2 py-0.5 rounded bg-slate-950 border border-slate-900 text-[10px] font-mono text-slate-500">
+                          {course}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-xs text-slate-400 font-light pt-3 leading-relaxed">
+                    Balanced coursework with side projects built throughout the degree — including Busmate LK, ServeSmart, SoulGift, and Ferris the Librarian.
                   </p>
                 </div>
 
@@ -160,13 +215,13 @@ export default function Experience() {
               </h3>
               <div className="grid grid-cols-1 gap-3">
                 <div className="rounded-2xl border border-slate-900 bg-slate-950 p-4 text-sm text-slate-300">
-                  Built an AI-powered internal assistant for Zebra Technologies with Gemini and ASP.NET Core.
+                  Built an AI-powered internal assistant using Gemini and ASP.NET Core.
                 </div>
                 <div className="rounded-2xl border border-slate-900 bg-slate-950 p-4 text-sm text-slate-300">
                   Contributed to Busmate LK, a microservices transportation platform with React Native and Spring Boot.
                 </div>
                 <div className="rounded-2xl border border-slate-900 bg-slate-950 p-4 text-sm text-slate-300">
-                  Open to full-time Full-Stack Software Engineering roles after graduation.
+                  Open to full-time Full-Stack Software Engineering roles.
                 </div>
               </div>
             </div>

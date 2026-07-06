@@ -27,11 +27,11 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <About />
       <Experience />
       <Projects />
       <Skills />
       <LearningCards />
-      <About />
     </>
   );
 }

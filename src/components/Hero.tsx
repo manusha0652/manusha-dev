@@ -6,7 +6,7 @@ export default function Hero() {
   const gmailComposeUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=kawshanmanusha7@gmail.com";
 
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center px-6 lg:px-16 pt-28 pb-16 border-b border-slate-900 overflow-hidden">
+    <section className="relative min-h-[90vh] flex flex-col justify-center px-6 lg:px-16 pt-24 pb-10 border-b border-slate-900 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,0.12),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(15,23,42,0.9),transparent_45%)] pointer-events-none"></div>
       <div className="absolute top-24 right-10 w-64 h-64 bg-blue-500/10 blur-[120px] rounded-full pointer-events-none"></div>
 
@@ -26,9 +26,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-6"
+            className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.15] mb-5"
           >
-            I'm an aspiring software engineer <br />
+            I'm an aspiring software engineer{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-300 via-cyan-300 to-slate-100">
               building my career across React, ASP.NET Core, Spring Boot and microservices.
             </span>
@@ -38,9 +38,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-slate-300 text-lg sm:text-xl max-w-2xl leading-relaxed mb-8 font-sans font-light"
+            className="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed mb-6 font-sans font-light"
           >
-            Computer Science graduate building my career as a Full-Stack Software Engineer, with hands-on experience at Zebra Technologies. I'm growing my skills across React, TypeScript, ASP.NET Core, and Spring Boot, and going deeper into AI/ML and cloud, so I can shape myself into an engineer who covers every part of the stack.
+            Computer Science graduate building my career as a Full-Stack Software Engineer, with hands-on experience from my software engineering internship. I'm growing my skills across React, TypeScript, ASP.NET Core, and Spring Boot, and going deeper into AI/ML and cloud, so I can shape myself into an engineer who covers every part of the stack.
           </motion.p>
 
           <motion.div
@@ -71,18 +71,18 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-12 mt-12 border-t border-slate-900/80"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8 mt-8 border-t border-slate-900/80"
           >
-            <div className="rounded-2xl border border-slate-900 bg-slate-950/50 p-4">
-              <div className="font-display text-2xl sm:text-3xl font-bold text-white">Zebra</div>
-              <div className="text-xs text-slate-500 uppercase tracking-widest font-mono mt-1">Enterprise internship</div>
+            <div className="rounded-2xl border border-slate-900 bg-slate-950/50 p-3">
+              <div className="font-display text-xl sm:text-2xl font-bold text-white">Intern</div>
+              <div className="text-xs text-slate-500 uppercase tracking-widest font-mono mt-1">Enterprise experience</div>
             </div>
-            <div className="rounded-2xl border border-slate-900 bg-slate-950/50 p-4">
-              <div className="font-display text-2xl sm:text-3xl font-bold text-white">Gemini</div>
+            <div className="rounded-2xl border border-slate-900 bg-slate-950/50 p-3">
+              <div className="font-display text-xl sm:text-2xl font-bold text-white">Gemini</div>
               <div className="text-xs text-slate-500 uppercase tracking-widest font-mono mt-1">AI assistant shipped</div>
             </div>
-            <div className="rounded-2xl border border-slate-900 bg-slate-950/50 p-4">
-              <div className="font-display text-2xl sm:text-3xl font-bold text-white">React</div>
+            <div className="rounded-2xl border border-slate-900 bg-slate-950/50 p-3">
+              <div className="font-display text-xl sm:text-2xl font-bold text-white">React</div>
               <div className="text-xs text-slate-500 uppercase tracking-widest font-mono mt-1">Full-stack delivery</div>
             </div>
           </motion.div>

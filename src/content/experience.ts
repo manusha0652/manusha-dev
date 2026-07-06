@@ -7,12 +7,12 @@ export const experience: ExperienceItem[] = [
     company: "Zebra Technologies",
     period: "Nov 2025 – Apr 2026",
     highlights: [
+      "Developed an AI-powered chat assistant for the company's internal website using ASP.NET Core, React, SQL Server, and the Gemini LLM API.",
       "Engineered and maintained enterprise web applications with React, TypeScript, and ASP.NET Core, improving UI responsiveness and overall system stability across multiple modules.",
-      "Authored technical documentation for the AI assistant, including system architecture, API usage, and onboarding notes for other developers.",
-      "Designed scalable RESTful APIs and backend services in ASP.NET Core, supporting smooth frontend-backend communication across production systems.",
+      "Authored technical documentation for the chat assistant, including system architecture, API usage, and onboarding notes for other developers.",
       "Worked in an Agile environment with Git and Jira, diagnosing bugs and shipping fixes that improved reliability and code quality."
     ],
-    skillsUsed: ["React", "TypeScript", "ASP.NET Core", "SQL Server", "REST APIs", "Agile", "Jira"]
+    skillsUsed: ["React", "TypeScript", "ASP.NET Core", "SQL Server", "Gemini LLM API", "REST APIs", "Agile", "Jira"]
   }
 ];
 

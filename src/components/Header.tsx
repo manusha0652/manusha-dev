@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Github, Linkedin,Download } from "lucide-react";
 import cvFile from "../../assets/cv.pdf";
 
-const NAV_SECTIONS = ["projects", "skills", "learning", "experience", "about"];
+const NAV_SECTIONS = ["about", "experience", "projects", "skills", "learning"];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -75,6 +75,12 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-xs font-mono">
+          <Link to="/#about" className={navLinkClass("about")}>
+            ABOUT
+          </Link>
+          <Link to="/#experience" className={navLinkClass("experience")}>
+            EXPERIENCE
+          </Link>
           <Link to="/#projects" className={navLinkClass("projects")}>
             WORK
           </Link>
@@ -83,12 +89,6 @@ export default function Header() {
           </Link>
           <Link to="/#learning" className={navLinkClass("learning")}>
             LEARNING
-          </Link>
-          <Link to="/#experience" className={navLinkClass("experience")}>
-            EXPERIENCE
-          </Link>
-          <Link to="/#about" className={navLinkClass("about")}>
-            ABOUT
           </Link>
          <a
   href={cvFile}
@@ -148,6 +148,20 @@ export default function Header() {
         >
           <div className="flex flex-col gap-4">
             <Link
+              to="/#about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-slate-300 hover:text-white py-2 border-b border-slate-900/40"
+            >
+              ABOUT
+            </Link>
+            <Link
+              to="/#experience"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-slate-300 hover:text-white py-2 border-b border-slate-900/40"
+            >
+              EXPERIENCE
+            </Link>
+            <Link
               to="/#projects"
               onClick={() => setMobileMenuOpen(false)}
               className="text-slate-300 hover:text-white py-2 border-b border-slate-900/40"
@@ -167,20 +181,6 @@ export default function Header() {
               className="text-slate-300 hover:text-white py-2 border-b border-slate-900/40"
             >
               LEARNING
-            </Link>
-            <Link
-              to="/#experience"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-slate-300 hover:text-white py-2 border-b border-slate-900/40"
-            >
-              EXPERIENCE
-            </Link>
-            <Link
-              to="/#about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-slate-300 hover:text-white py-2 border-b border-slate-900/40"
-            >
-              ABOUT
             </Link>
               <a
   href={cvFile}
