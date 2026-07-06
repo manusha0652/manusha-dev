@@ -12,7 +12,7 @@ export const experience: ExperienceItem[] = [
       "Designed scalable RESTful APIs and backend services in ASP.NET Core, supporting smooth frontend-backend communication across production systems.",
       "Worked in an Agile environment with Git and Jira, diagnosing bugs and shipping fixes that improved reliability and code quality."
     ],
-    skillsUsed: ["React", "TypeScript", "ASP.NET Core", "REST APIs", "Agile", "Jira"]
+    skillsUsed: ["React", "TypeScript", "ASP.NET Core", "SQL Server", "REST APIs", "Agile", "Jira"]
   }
 ];
 

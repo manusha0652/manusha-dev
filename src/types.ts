@@ -8,9 +8,9 @@ export interface Project {
   oneHardThing: string;
   techStack: string[];
   tags: string[];
-  previewIconKey: "bus" | "food" | "gift" | "health";
-  previewAccent: "blue" | "amber" | "violet" | "emerald";
-  previewDomain: string; // Fake address-bar text shown in the project preview mockup
+  previewImage: string; // Path under /public/projects to the real screenshot
+  previewIconKey: "bus" | "food" | "gift" | "health" | "rag"; // Used as a fallback until previewImage exists
+  previewAccent: "blue" | "amber" | "violet" | "emerald" | "cyan";
   metrics?: string[];
   links: {
     github?: string;
@@ -39,4 +39,15 @@ export interface Certification {
   issuer: string;
   year: string;
   link?: string;
+}
+
+export interface LearningTopic {
+  slug: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  currentFocus: string[];
+  whatImDoing: string[];
+  nextSteps: string[];
+  iconKey: "brain" | "boxes" | "cloud" | "code";
 }

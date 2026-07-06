@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Project } from "../types";
 import { projects } from "../data";
 import { ArrowUpRight, Github, ChevronRight, Layers } from "lucide-react";
-import ProjectPreview from "./ProjectPreview";
+import ProjectImage from "./ProjectImage";
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -21,7 +21,7 @@ export default function Projects() {
             </h2>
           </div>
           <p className="text-slate-400 font-sans max-w-sm font-light text-sm md:text-base mt-4 md:mt-0 leading-relaxed">
-            Three projects that show production delivery across enterprise software, mobile workflows, and full-stack product work.
+            Three projects that show production delivery across agentic AI, microservices, and full-stack product work.
           </p>
         </div>
 
@@ -37,10 +37,11 @@ export default function Projects() {
               className="group cursor-pointer bg-slate-950 border border-slate-900/80 hover:border-blue-500/30 rounded-2xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 relative overflow-hidden"
             >
               <div className="relative h-56 w-full rounded-xl overflow-hidden mb-6 bg-slate-900 border border-slate-800/40">
-                <ProjectPreview
+                <ProjectImage
                   project={project}
-                  className="transition-transform duration-500 group-hover:scale-[1.02]"
+                  className="transition-transform duration-500 group-hover:scale-[1.03]"
                 />
+                <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-slate-950/70 via-transparent to-transparent"></div>
               </div>
 
               <div>
@@ -120,7 +121,7 @@ export default function Projects() {
                 
                 {/* Hero Header & Preview Panel */}
                 <div className="lg:col-span-5 relative h-64 lg:h-auto min-h-64 bg-slate-900">
-                  <ProjectPreview project={selectedProject} className="absolute inset-0" />
+                  <ProjectImage project={selectedProject} className="absolute inset-0" />
                   <div className="absolute inset-0 bg-linear-to-t from-brand-card via-brand-card/40 to-transparent lg:bg-linear-to-r lg:from-transparent lg:to-brand-card"></div>
                   
                   <div className="absolute bottom-6 left-6 right-6">

@@ -141,7 +141,11 @@ export default function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-x-0 top-18 bg-brand-bg/95 backdrop-blur-lg border-b border-slate-900 p-6 space-y-6 z-30 font-mono text-sm">
+        <div
+          className={`md:hidden fixed inset-x-0 bg-brand-bg/95 backdrop-blur-lg border-b border-slate-900 p-6 space-y-6 z-50 font-mono text-sm transition-all duration-300 ${
+            scrolled ? "top-17" : "top-21"
+          }`}
+        >
           <div className="flex flex-col gap-4">
             <Link
               to="/#projects"
