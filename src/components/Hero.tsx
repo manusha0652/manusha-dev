@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,0.12),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(15,23,42,0.9),transparent_45%)] pointer-events-none"></div>
       <div className="absolute top-24 right-10 w-64 h-64 bg-blue-500/10 blur-[120px] rounded-full pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-start relative z-10">
         <div className="lg:col-span-7 flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -19,7 +19,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-300 text-xs font-mono mb-6 self-start"
           >
             <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-pulse"></span>
-            SOFTWARE ENGINEER | UCSC CS 2023 - 2026
+            ASPIRING SOFTWARE ENGINEER | UCSC CS 2023 - 2026
           </motion.div>
 
           <motion.h1
@@ -28,9 +28,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-6"
           >
-            I build production software <br />
+            I'm an aspiring software engineer <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-300 via-cyan-300 to-slate-100">
-              across React, ASP.NET Core,Springboot and microservices.
+              building my career across React, ASP.NET Core, Spring Boot and microservices.
             </span>
           </motion.h1>
 
@@ -40,7 +40,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-slate-300 text-lg sm:text-xl max-w-2xl leading-relaxed mb-8 font-sans font-light"
           >
-            Fresh Computer Science graduate and Full-Stack Software Engineer with enterprise experience at Zebra Technologies. I ship React, TypeScript, ASP.NET Core, and Spring Boot systems that handle real users, real data, and real delivery pressure.
+            Computer Science graduate building my career as a Full-Stack Software Engineer, with hands-on experience at Zebra Technologies. I'm growing my skills across React, TypeScript, ASP.NET Core, and Spring Boot, and going deeper into AI/ML and cloud, so I can shape myself into an engineer who covers every part of the stack.
           </motion.p>
 
           <motion.div
@@ -106,7 +106,7 @@ export default function Hero() {
                 Open to full-time SWE roles
               </div>
               <div className="text-white font-display text-2xl sm:text-3xl font-bold">Manusha Ranaweera</div>
-              <div className="text-slate-300 text-sm mt-1">Full-Stack Software Engineer</div>
+              <div className="text-slate-300 text-sm mt-1">Aspiring Full-Stack Software Engineer</div>
             </div>
           </div>
 
