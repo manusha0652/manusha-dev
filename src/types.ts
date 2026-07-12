@@ -9,6 +9,7 @@ export interface Project {
   techStack: string[];
   tags: string[];
   previewImage: string; // Path under /public/projects to the real screenshot
+  previewImages?: string[]; // Optional gallery — when set, the preview cycles through these like a carousel
   previewIconKey: "bus" | "food" | "gift" | "health" | "rag"; // Used as a fallback until previewImage exists
   previewAccent: "blue" | "amber" | "violet" | "emerald" | "cyan";
   metrics?: string[];

@@ -10,7 +10,8 @@ export const project: Project = {
   oneHardThing: "Designed the retrieval and prompting pipeline to resist hallucination by forcing every response to trace back to retrieved source chunks, tuning chunking and ranking until answers stayed accurate with zero cloud API calls.",
   techStack: ["Python", "LangChain", "Ollama", "Llama 3", "ChromaDB", "Streamlit", "RAG Architecture"],
   tags: ["Agentic AI", "RAG", "Local LLM"],
-  previewImage: "/projects/ferris-the-librarian.jpg",
+  previewImage: "/projects/ferris-the-librarian/1.jpg",
+  previewImages: ["/projects/ferris-the-librarian/1.jpg", "/projects/ferris-the-librarian/2.jpg"],
   previewIconKey: "rag",
   previewAccent: "cyan",
   metrics: [

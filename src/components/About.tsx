@@ -30,8 +30,8 @@ export default function About() {
             </div>
             <div className="rounded-2xl border border-slate-900 bg-slate-950 p-4">
               <Sparkles className="h-5 w-5 text-blue-400 mb-3" />
-              <div className="text-white font-semibold mb-1">Enterprise AI</div>
-              <div className="text-xs text-slate-500">Gemini assistant shipped</div>
+              <div className="text-white font-semibold mb-1">Enterprise Backend</div>
+              <div className="text-xs text-slate-500">Spring Boot services shipped</div>
             </div>
             <div className="rounded-2xl border border-slate-900 bg-slate-950 p-4">
               <Users className="h-5 w-5 text-blue-400 mb-3" />

@@ -78,8 +78,8 @@ export default function Hero() {
               <div className="text-xs text-slate-500 uppercase tracking-widest font-mono mt-1">Enterprise experience</div>
             </div>
             <div className="rounded-2xl border border-slate-900 bg-slate-950/50 p-3">
-              <div className="font-display text-xl sm:text-2xl font-bold text-white">Gemini</div>
-              <div className="text-xs text-slate-500 uppercase tracking-widest font-mono mt-1">AI assistant shipped</div>
+              <div className="font-display text-xl sm:text-2xl font-bold text-white">Spring Boot</div>
+              <div className="text-xs text-slate-500 uppercase tracking-widest font-mono mt-1">Java backend services</div>
             </div>
             <div className="rounded-2xl border border-slate-900 bg-slate-950/50 p-3">
               <div className="font-display text-xl sm:text-2xl font-bold text-white">React</div>
@@ -121,8 +121,8 @@ export default function Hero() {
                 <div className="text-[10px] text-slate-500 uppercase tracking-widest mt-1">Backend</div>
               </div>
               <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-3">
-                <div className="text-white font-bold text-lg">Gemini</div>
-                <div className="text-[10px] text-slate-500 uppercase tracking-widest mt-1">AI</div>
+                <div className="text-white font-bold text-lg">Spring Boot</div>
+                <div className="text-[10px] text-slate-500 uppercase tracking-widest mt-1">Java</div>
               </div>
             </div>
 
