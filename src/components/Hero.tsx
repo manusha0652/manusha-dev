@@ -19,7 +19,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-300 text-xs font-mono mb-6 self-start"
           >
             <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-pulse"></span>
-            ASPIRING SOFTWARE ENGINEER | UCSC CS 2023 - 2026
+            ASPIRING SOFTWARE ENGINEER | UCSC
           </motion.div>
 
           <motion.h1
