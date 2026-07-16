@@ -16,6 +16,7 @@ export interface Project {
   links: {
     github?: string;
     live?: string;
+    report?: string; // Optional path under /public to a project report/doc PDF
   };
   designNotes: string; // Detail highlighting the UI/UX design choices and layout transitions
 }

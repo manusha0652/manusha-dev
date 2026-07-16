@@ -3,12 +3,12 @@ import { Project } from "../../types";
 export const project: Project = {
   id: "busmate-lk",
   title: "Busmate LK",
-  subtitle: "Smart Public Bus Transportation System",
-  description: "A team-built transportation platform for real-time booking and trip coordination across passengers, conductors, bus owners, and transport authorities.",
-  problem: "Public bus travel is still fragmented by manual coordination, limited seat visibility, and poor communication between passengers and operators.",
-  solution: "Built the conductor mobile app in React Native and contributed to the ticket management microservice in Spring Boot so teams could manage fares, seat availability, and trip assignment from a shared system.",
-  oneHardThing: "Implemented inter-service communication across four microservices with isolated databases, keeping the ticketing workflow consistent while the platform scaled on AWS EC2.",
-  techStack: ["Spring Boot", "React Native", "TypeScript", "Next.js", "Supabase (PostgreSQL)", "AWS EC2", "Tailwind CSS", "Docker"],
+  subtitle: "Smart Public Bus Transport Management System",
+  description: "A 6-person university team project (UCSC Group Project II) building a microservices platform for Sri Lanka's long-distance and expressway bus network — connecting passengers, conductors, fleet operators, time keepers, and Ministry of Transport officials through dedicated web and mobile apps for live GPS tracking, QR-code digital ticketing, and route/schedule management.",
+  problem: "A survey the team ran found that over 75% of Sri Lankan bus passengers struggle with public transport: no centralized way to look up routes, no real-time tracking so arrival times are a guess, and a cash-only, walk-up ticketing process that rules out advance booking. Operators had no digital tools for fleet, staff, or revenue management, and the Ministry of Transport had no unified view of ridership across operators.",
+  solution: "Owned the Conductor mobile app end to end in React Native — shift check-in, live GPS broadcast, and QR ticket issuing/validation — integrating it with the shared Spring Boot ticketing and location-tracking services that also power the Passenger app, Fleet Operator dashboards, Ministry of Transport portal, and Time Keeper portal.",
+  oneHardThing: "Kept the Conductor app's live GPS broadcast and QR ticket validation reliable against a backend split into independent Spring Boot microservices (ticketing, routing, scheduling, location tracking, analytics) communicating over REST, each containerized separately and deployed through GitHub Actions CI/CD.",
+  techStack: ["Spring Boot", "React Native", "TypeScript", "Next.js", "PostgreSQL", "Supabase", "AWS EC2", "Docker", "Tailwind CSS"],
   tags: ["Microservices", "React Native", "AWS EC2"],
   previewImage: "/projects/busmate-lk/1.jpeg",
   previewImages: [
@@ -23,12 +23,13 @@ export const project: Project = {
   previewIconKey: "bus",
   previewAccent: "blue",
   metrics: [
-    "Four microservices with isolated databases",
-    "Real-time booking and trip coordination",
-    "Conductor app and ticketing service ownership"
+    "6 role-based apps: passengers, conductors, fleet operators, time keepers, MoT, admins",
+    "Microservices backend (ticketing, routing, scheduling, tracking, analytics) on Docker + CI/CD",
+    "Conductor app owned end to end: UI and backend service integration"
   ],
   links: {
     github: "https://github.com/manusha0652",
+    report: "/projects/busmate-lk/final-report.pdf",
   },
-  designNotes: "Positioned as a practical system for a real transportation workflow: fast booking flows, clear operator screens, and service boundaries that keep distributed state manageable."
+  designNotes: "Positioned as a practical system for a real transportation workflow: fast booking flows, clear operator screens, and service boundaries that keep distributed state manageable across six distinct role-based interfaces."
 };

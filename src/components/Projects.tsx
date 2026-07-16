@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Project } from "../types";
 import { projects } from "../data";
-import { ArrowUpRight, Github, ChevronRight, Layers } from "lucide-react";
+import { ArrowUpRight, Github, ChevronRight, Layers, FileText } from "lucide-react";
 import ProjectImage from "./ProjectImage";
 
 export default function Projects() {
@@ -206,6 +206,16 @@ export default function Projects() {
                           className="px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white transition-all text-xs font-mono flex items-center gap-2"
                         >
                           <Github className="h-3.5 w-3.5" /> Code Repository
+                        </a>
+                      )}
+                      {selectedProject.links.report && (
+                        <a
+                          href={selectedProject.links.report}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white transition-all text-xs font-mono flex items-center gap-2"
+                        >
+                          <FileText className="h-3.5 w-3.5" /> Project Report
                         </a>
                       )}
                     </div>
