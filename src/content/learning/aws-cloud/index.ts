@@ -6,9 +6,10 @@ export const topic: LearningTopic = {
   subtitle: "Hands-on with core AWS services through AWS SimuLearn practice labs.",
   description:
     "I've been working through AWS SimuLearn's scenario-based labs to build practical, hands-on experience with core AWS services — beyond just reading documentation.",
-  currentFocus: ["Amazon EC2", "Amazon S3", "Availability Zones", "AWS Systems Manager", "Bucket policies"],
+  currentFocus: ["Amazon EC2", "Amazon S3", "Amazon DynamoDB", "Availability Zones", "AWS Systems Manager", "Bucket policies"],
   whatImDoing: [
     "Completed AWS SimuLearn: Cloud Computing Essentials, earning a certificate for hosting a static website on Amazon S3.",
+    "Designed a high-performance NoSQL table on Amazon DynamoDB to collect viewer behavior data for a streaming platform scenario.",
     "Deployed EC2 instances across separate Availability Zones for a more resilient setup in the Cloud First Steps lab.",
     "Practiced resizing EC2 instance types and connecting to instances with AWS Systems Manager and EC2 Instance Connect.",
   ],
@@ -33,6 +34,12 @@ export const topic: LearningTopic = {
       image: "/learning/aws-cloud/computing-solutions.png",
       description:
         "Scaled up an EC2 instance from t3.micro to m4.large to improve application performance, using AWS Systems Manager and EC2 Instance Connect to connect to and inspect instance metadata.",
+    },
+    {
+      title: "First NoSQL Database",
+      image: "/learning/aws-cloud/first-nosql-database.png",
+      description:
+        "Designed and built a high-performance, scalable NoSQL database on Amazon DynamoDB for a streaming entertainment company scenario, modeling a table to collect and query viewer behavior data.",
     },
   ],
 };
