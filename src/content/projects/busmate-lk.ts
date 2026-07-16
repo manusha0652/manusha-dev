@@ -10,7 +10,16 @@ export const project: Project = {
   oneHardThing: "Implemented inter-service communication across four microservices with isolated databases, keeping the ticketing workflow consistent while the platform scaled on AWS EC2.",
   techStack: ["Spring Boot", "React Native", "TypeScript", "Next.js", "Supabase (PostgreSQL)", "AWS EC2", "Tailwind CSS", "Docker"],
   tags: ["Microservices", "React Native", "AWS EC2"],
-  previewImage: "/projects/busmate-lk.jpg",
+  previewImage: "/projects/busmate-lk/1.jpeg",
+  previewImages: [
+    "/projects/busmate-lk/1.jpeg",
+    "/projects/busmate-lk/2.jpeg",
+    "/projects/busmate-lk/3.jpeg",
+    "/projects/busmate-lk/4.jpeg",
+    "/projects/busmate-lk/5.jpeg",
+    "/projects/busmate-lk/6.jpeg",
+    "/projects/busmate-lk/7.jpeg",
+  ],
   previewIconKey: "bus",
   previewAccent: "blue",
   metrics: [
