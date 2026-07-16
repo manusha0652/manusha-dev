@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { BrainCircuit, Boxes, Cloud, Code2, ArrowRight } from "lucide-react";
+import { BrainCircuit, Boxes, Cloud, Code2, Server, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { learningTopics } from "../content/learning";
 
@@ -8,6 +8,7 @@ const iconMap = {
   boxes: Boxes,
   cloud: Cloud,
   code: Code2,
+  server: Server,
 };
 
 export default function LearningCards() {

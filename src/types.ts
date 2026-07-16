@@ -42,6 +42,13 @@ export interface Certification {
   link?: string;
 }
 
+export interface LearningAchievement {
+  title: string; // Name of the lab / module completed
+  image: string; // Path under /public to the solution diagram or screenshot
+  description: string; // What was built/learned in this lab
+  certificateLink?: string; // Optional path under /public to an earned certificate
+}
+
 export interface LearningTopic {
   slug: string;
   title: string;
@@ -50,5 +57,6 @@ export interface LearningTopic {
   currentFocus: string[];
   whatImDoing: string[];
   nextSteps: string[];
-  iconKey: "brain" | "boxes" | "cloud" | "code";
+  iconKey: "brain" | "boxes" | "cloud" | "code" | "server";
+  achievements?: LearningAchievement[]; // Completed labs/modules shown as an image gallery
 }

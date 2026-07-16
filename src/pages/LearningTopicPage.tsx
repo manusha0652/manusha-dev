@@ -1,5 +1,5 @@
 import { Link, Navigate, useParams } from "react-router-dom";
-import { ArrowLeft, BrainCircuit, Boxes, Cloud, Code2, Sparkles } from "lucide-react";
+import { ArrowLeft, BrainCircuit, Boxes, Cloud, Code2, Server, Sparkles, Award } from "lucide-react";
 import { motion } from "motion/react";
 import { getLearningTopic } from "../content/learning";
 import PageShell from "../components/PageShell";
@@ -8,6 +8,7 @@ const iconMap = {
   "ai-ml": BrainCircuit,
   kubernetes: Boxes,
   "cloud-devops": Cloud,
+  "aws-cloud": Server,
   "system-thinking": Code2,
 } as const;
 
@@ -105,6 +106,49 @@ export default function LearningTopicPage() {
               </div>
             </motion.div>
           </div>
+
+          {topic.achievements && topic.achievements.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.15 }}
+              className="mt-6 lg:mt-8 rounded-[2rem] border border-slate-900 bg-slate-950/80 p-6 sm:p-8"
+            >
+              <h2 className="font-display text-xl sm:text-2xl font-bold text-white mb-5">
+                Completed labs
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                {topic.achievements.map((achievement) => (
+                  <div
+                    key={achievement.title}
+                    className="rounded-2xl border border-slate-900 bg-slate-950 overflow-hidden flex flex-col"
+                  >
+                    <img
+                      src={achievement.image}
+                      alt={achievement.title}
+                      className="w-full aspect-video object-cover object-top border-b border-slate-900"
+                      loading="lazy"
+                    />
+                    <div className="p-4 flex flex-col gap-2 flex-1">
+                      <h3 className="text-sm font-semibold text-white">{achievement.title}</h3>
+                      <p className="text-xs text-slate-400 leading-relaxed flex-1">{achievement.description}</p>
+                      {achievement.certificateLink && (
+                        <a
+                          href={achievement.certificateLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-1 inline-flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-widest text-blue-300 hover:text-blue-200 transition-colors"
+                        >
+                          <Award className="h-3.5 w-3.5" />
+                          View certificate
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          )}
         </div>
       </section>
     </PageShell>
