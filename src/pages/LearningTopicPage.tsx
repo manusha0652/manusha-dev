@@ -3,6 +3,7 @@ import { ArrowLeft, BrainCircuit, Boxes, Cloud, Code2, Server, Sparkles, Award }
 import { motion } from "motion/react";
 import { getLearningTopic } from "../content/learning";
 import PageShell from "../components/PageShell";
+import { withBase } from "../lib/assetPath";
 
 const iconMap = {
   "ai-ml": BrainCircuit,
@@ -124,7 +125,7 @@ export default function LearningTopicPage() {
                     className="rounded-2xl border border-slate-900 bg-slate-950 overflow-hidden flex flex-col"
                   >
                     <img
-                      src={achievement.image}
+                      src={withBase(achievement.image)}
                       alt={achievement.title}
                       className="w-full aspect-video object-cover object-top border-b border-slate-900"
                       loading="lazy"
@@ -134,7 +135,7 @@ export default function LearningTopicPage() {
                       <p className="text-xs text-slate-400 leading-relaxed flex-1">{achievement.description}</p>
                       {achievement.certificateLink && (
                         <a
-                          href={achievement.certificateLink}
+                          href={withBase(achievement.certificateLink)}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="mt-1 inline-flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-widest text-blue-300 hover:text-blue-200 transition-colors"

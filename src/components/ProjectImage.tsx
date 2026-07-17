@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence, type PanInfo } from "motion/react";
 import { BookOpen, Bus, ChevronLeft, ChevronRight, Gift, HeartPulse, UtensilsCrossed } from "lucide-react";
 import { Project } from "../types";
+import { withBase } from "../lib/assetPath";
 
 const iconMap = {
   bus: Bus,
@@ -80,7 +81,7 @@ export default function ProjectImage({ project, className = "" }: ProjectImagePr
       <AnimatePresence initial={false} custom={direction} mode="popLayout">
         <motion.img
           key={`${project.id}-${index}`}
-          src={images[index]}
+          src={withBase(images[index])}
           alt={`${project.title} screenshot ${index + 1}`}
           custom={direction}
           variants={slideVariants}

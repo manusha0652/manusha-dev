@@ -4,6 +4,7 @@ import { Project } from "../types";
 import { projects } from "../data";
 import { ArrowUpRight, Github, ChevronRight, Layers, FileText } from "lucide-react";
 import ProjectImage from "./ProjectImage";
+import { withBase } from "../lib/assetPath";
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -210,7 +211,7 @@ export default function Projects() {
                       )}
                       {selectedProject.links.report && (
                         <a
-                          href={selectedProject.links.report}
+                          href={withBase(selectedProject.links.report)}
                           target="_blank"
                           rel="noreferrer"
                           className="px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white transition-all text-xs font-mono flex items-center gap-2"
